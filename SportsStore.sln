@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C2CA14BA-42A2-4A39-83D3-FA9D36DFAD49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C7B41BE2-7484-44E2-93DB-AD61380CF403}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SportsStore", "src\SportsStore\SportsStore.xproj", "{5561211F-A412-4B1A-9AD5-F6DB002F397E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4B5B22DB-D07D-4CB7-94F0-FA6F8A189183}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SportsStore.Tests", "test\SportsStore.Tests\SportsStore.Tests.xproj", "{FD54C071-4E5E-4545-B740-F528C60663D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5561211F-A412-4B1A-9AD5-F6DB002F397E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5561211F-A412-4B1A-9AD5-F6DB002F397E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5561211F-A412-4B1A-9AD5-F6DB002F397E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5561211F-A412-4B1A-9AD5-F6DB002F397E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD54C071-4E5E-4545-B740-F528C60663D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD54C071-4E5E-4545-B740-F528C60663D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD54C071-4E5E-4545-B740-F528C60663D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD54C071-4E5E-4545-B740-F528C60663D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5561211F-A412-4B1A-9AD5-F6DB002F397E} = {C2CA14BA-42A2-4A39-83D3-FA9D36DFAD49}
+		{FD54C071-4E5E-4545-B740-F528C60663D8} = {4B5B22DB-D07D-4CB7-94F0-FA6F8A189183}
+	EndGlobalSection
+EndGlobal
