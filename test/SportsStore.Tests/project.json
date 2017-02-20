@@ -1,22 +1,22 @@
 ﻿{
   "version": "1.0.0-*",
   "testRunner": "xunit",
+  "System.Diagnostics.TraceSource": "4.0.0",
   "dependencies": {
+    "dotnet-test-xunit": "2.2.0-preview2-build1029",
     "Microsoft.NETCore.App": {
       "type": "platform",
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
-    "xunit": "2.1.0",
-    "dotnet-test-xunit": "2.2.0-preview2-build1029",
-    "moq.netcore": "4.4.0-beta8",
-    "System.Diagnostics.TraceSource": "4.0.0",
-    "SportsStore": "1.0.0"
+    "Moq": "4.6.38-alpha",
+    "SportsStore": "1.0.0",
+    "xunit": "2.1.0"
   },
 
   "frameworks": {
     "netcoreapp1.0": {
-      "imports": ["dotnet5.6","portable-net45+win8"]
-    } 
+      "imports": [ "dotnet5.6", "portable-net45+win8" ]
+    }
   }
 }
 
