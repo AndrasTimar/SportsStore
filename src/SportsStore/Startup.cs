@@ -22,8 +22,9 @@ namespace SportsStore
         {
             Configuration = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json").Build();            
+                .AddJsonFile("appsettings.json").Build();
         }
+
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
@@ -44,8 +45,25 @@ namespace SportsStore
             loggerFactory.AddConsole();
             app.UseMvc(routes =>
             {
-                routes.MapRoute(name: "default",
-                    template: "{controller=Product}/{action=List}/{id?}");
+                routes.MapRoute(name: null,
+                    template: "{category}/Page{page:int}",
+                    defaults: new {controller = "Product", action = "List"}
+                );
+                routes.MapRoute(
+                    name: null,
+                    template: "Page{page:int}",
+                    defaults: new {controller = "Product", action = "List", page = 1}
+                );
+                routes.MapRoute(
+                    name: null,
+                    template: "{category}",
+                    defaults: new {controller = "Product", action = "List", page = 1}
+                );
+                routes.MapRoute(
+                    name: null,
+                    template: "",
+                    defaults: new {controller = "Product", action = "List", page = 1});
+                routes.MapRoute(name: null, template: "{controller}/{action}/{id?}");
             });
 
             SeedData.EnsurePopulated(app);
