@@ -11,8 +11,7 @@ namespace SportsStore.Models
 
         public virtual void AddItem(Product product, int quantity)
         {
-            CartLine line = lineCollection
-                .Where(p => p.Product.ProductId == product.ProductId).FirstOrDefault();
+            CartLine line = lineCollection.FirstOrDefault(p => p.Product.ProductId == product.ProductId);
             if (line == null)
             {
                 lineCollection.Add(new CartLine
